@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Masai</title>
+    <style type="text/css">
+      .flag {
+        width: 450px;
+        height: 300px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin: auto;
+        margin-top: 20vh;
+      }
+      .safforn {
+        height: 100px;
+        background-color: #ff9933;
+      }
+      .white {
+        height: 100px;
+        background-color: #ffffff !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .chakra {
+        width: 85px;
+        height: 85px;
+        border: 3px solid #000080;
+        border-radius: 50%;
+        position: relative;
+        animation: wheel 5s 0ms linear infinite;
+      }
+      .line {
+        border: 1px solid #000080;
+        background-color: #000080;
+        width: 100%;
+        margin-top: 50%;
+        position: absolute;
+      }
+      .line:nth-child(1) {
+        transform: rotate(0deg);
+      }
+      .line:nth-child(2) {
+        transform: rotate(15deg);
+      }
+      .line:nth-child(3) {
+        transform: rotate(30deg);
+      }
+      .line:nth-child(4) {
+        transform: rotate(45deg);
+      }
+      .line:nth-child(5) {
+        transform: rotate(60deg);
+      }
+      .line:nth-child(6) {
+        transform: rotate(75deg);
+      }
+      .line:nth-child(7) {
+        transform: rotate(90deg);
+      }
+      .line:nth-child(8) {
+        transform: rotate(105deg);
+      }
+      .line:nth-child(9) {
+        transform: rotate(120deg);
+      }
+      .line:nth-child(10) {
+        transform: rotate(135deg);
+      }
+      .line:nth-child(11) {
+        transform: rotate(150deg);
+      }
+      .line:nth-child(12) {
+        transform: rotate(165deg);
+      }
+      @keyframes wheel {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .green {
+        height: 100px;
+        background-color: #138808;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flag">
+      <div class="safforn"></div>
+      <div class="white">
+        <div class="chakra">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="green"></div>
+    </div>
+  </body>
+</html>
