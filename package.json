@@ -1,8 +1,8 @@
 {
+  "homepage": "https://iamsanjaygupta.github.io/IamSanjayGupta.github.io",
   "name": "iamsanjaygupta-github-io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://iamsanjaygupta.github.io/IamSanjayGupta.github.io",
   "dependencies": {
     "@chakra-ui/react": "^2.3.2",
     "@emotion/react": "^11.10.4",
