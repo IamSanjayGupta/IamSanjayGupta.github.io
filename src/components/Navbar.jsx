@@ -11,10 +11,11 @@ import {
   IconButton,
   CloseButton,
   Avatar,
+  Link,
 } from "@chakra-ui/react";
 import Logo from "../../src/logo.svg";
 
-import { AiOutlineMenu, AiFillHome, AiOutlineInbox } from "react-icons/ai";
+import { AiOutlineMenu, AiFillHome, AiOutlineInbox, AiOutlineDownload } from "react-icons/ai";
 import { BsFillCameraVideoFill } from "react-icons/bs";
 
 export default function App() {
@@ -24,6 +25,26 @@ export default function App() {
     <>
       <chakra.header w="full" px={{ base: 2, sm: 4 }} py={4} shadow="md">
         <Flex justifyContent="space-between" mx="auto">
+          <chakra.a href="/" title="Sanjay Kumar Gupta" display="flex" alignItems="center">
+            <Avatar size="sm" name="Dan Abrahmov" src={Logo} />
+          </chakra.a>
+          <HStack spacing={3} display={{ base: "none", md: "flex" }}>
+            <Button variant="ghost">About</Button>
+            <Button variant="ghost">Skills</Button>
+            <Button variant="ghost">Projects</Button>
+            <Button variant="ghost">Contact</Button>
+          </HStack>
+          <Link
+            display={{ base: "none", md: "flex" }}
+            target="_blank"
+            href="https://drive.google.com/file/d/1VAP9hrHqw_VtIAMtJIYulbPVHb8yqyye/view?usp=sharing"
+            download="Sanjay-Gupta-Resume"
+            _hover={{ textDecoration: "none" }}
+          >
+            <Button variant="ghost" leftIcon={<AiOutlineDownload />}>
+              Downlaod Resume
+            </Button>
+          </Link>
           <Box display={{ base: "flex", md: "none" }}>
             <IconButton
               display={{ base: "flex", md: "none" }}
@@ -52,25 +73,29 @@ export default function App() {
                 onClick={mobileNav.onClose}
               />
               <Button w="full" variant="ghost" leftIcon={<AiFillHome />}>
-                Dashboard
+                About
               </Button>
               <Button w="full" variant="ghost" leftIcon={<AiOutlineInbox />}>
-                Inbox
+                Skills
               </Button>
               <Button w="full" variant="ghost" leftIcon={<BsFillCameraVideoFill />}>
-                Videos
+                Projects
               </Button>
+              <Button w="full" variant="ghost" leftIcon={<BsFillCameraVideoFill />}>
+                Contact
+              </Button>
+              <Link
+                target="_blank"
+                href="https://drive.google.com/file/d/1VAP9hrHqw_VtIAMtJIYulbPVHb8yqyye/view?usp=sharing"
+                download="Sanjay-Gupta-Resume"
+                _hover={{ textDecoration: "none" }}
+              >
+                <Button variant="ghost" leftIcon={<AiOutlineDownload />}>
+                  Downlaod Resume
+                </Button>
+              </Link>
             </VStack>
           </Box>
-          <chakra.a href="/" title="Sanjay Kumar Gupta" display="flex" alignItems="center">
-            <Avatar size="sm" name="Dan Abrahmov" src={Logo} />
-          </chakra.a>
-          <HStack spacing={3} display={{ base: "none", md: "flex" }}>
-            <Button variant="ghost">About</Button>
-            <Button variant="ghost">Skills</Button>
-            <Button variant="ghost">Projects</Button>
-            <Button variant="ghost">Contact</Button>
-          </HStack>
         </Flex>
       </chakra.header>
     </>
