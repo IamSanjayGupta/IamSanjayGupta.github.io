@@ -4,11 +4,12 @@ import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
-    <Box py="10">
+    <Box height={"80vh"} mt="6%" id="about">
       <Flex
         flexDirection={{ base: "column", md: "row" }}
         alignItems="center"
-        justifyContent="space-evenly"
+        justifyContent="flex-end"
+        gap="5%"
       >
         <Avatar
           width="300px"

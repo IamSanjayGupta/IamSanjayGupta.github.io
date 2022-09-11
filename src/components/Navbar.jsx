@@ -17,7 +17,7 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { AiOutlineDownload } from "react-icons/ai";
 
 const navItem = [
-  { path: "About", name: "About" },
+  { path: "#about", name: "About" },
   { path: "Skills", name: "Skills" },
   { path: "Projects", name: "Projects" },
   { path: "Contact", name: "Contact" },
@@ -27,10 +27,19 @@ export default function App() {
 
   return (
     <>
-      <chakra.header w="full" px={{ base: 2, sm: 4 }} py={4} shadow="md">
+      <chakra.header
+        w="full"
+        px={{ base: 2, sm: 4 }}
+        py={4}
+        shadow="md"
+        pos={"sticky"}
+        top="0"
+        zIndex={10}
+        bg="white"
+      >
         <Flex justifyContent="space-between" mx="auto">
           <chakra.a href="/" title="Sanjay Kumar Gupta" display="flex" alignItems="center">
-            <Avatar size="sm" name="Dan Abrahmov" src={Logo} />
+            <Avatar size="sm" name="Sanjay Gupta" src={Logo} />
           </chakra.a>
           <HStack spacing={3} display={{ base: "none", md: "flex" }}>
             {navItem.map((item) => {
