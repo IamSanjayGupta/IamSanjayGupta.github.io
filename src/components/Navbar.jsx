@@ -9,17 +9,21 @@ import {
   useDisclosure,
   VStack,
   IconButton,
-  CloseButton,
   Avatar,
   Link,
 } from "@chakra-ui/react";
 import Logo from "../../src/logo.svg";
+import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { AiOutlineDownload } from "react-icons/ai";
 
-import { AiOutlineMenu, AiFillHome, AiOutlineInbox, AiOutlineDownload } from "react-icons/ai";
-import { BsFillCameraVideoFill } from "react-icons/bs";
-
+const navItem = [
+  { path: "About", name: "About" },
+  { path: "Skills", name: "Skills" },
+  { path: "Projects", name: "Projects" },
+  { path: "Contact", name: "Contact" },
+];
 export default function App() {
-  const mobileNav = useDisclosure();
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <>
@@ -29,10 +33,13 @@ export default function App() {
             <Avatar size="sm" name="Dan Abrahmov" src={Logo} />
           </chakra.a>
           <HStack spacing={3} display={{ base: "none", md: "flex" }}>
-            <Button variant="ghost">About</Button>
-            <Button variant="ghost">Skills</Button>
-            <Button variant="ghost">Projects</Button>
-            <Button variant="ghost">Contact</Button>
+            {navItem.map((item) => {
+              return (
+                <Button key={item.path} variant="ghost">
+                  {item.name}
+                </Button>
+              );
+            })}
           </HStack>
           <Link
             display={{ base: "none", md: "flex" }}
@@ -51,39 +58,28 @@ export default function App() {
               fontSize="20px"
               color="gray.800"
               variant="ghost"
-              icon={<AiOutlineMenu />}
-              onClick={mobileNav.onOpen}
+              icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+              onClick={isOpen ? onClose : onOpen}
             />
             <VStack
               pos="absolute"
-              top={0}
               left={0}
               right={0}
-              display={mobileNav.isOpen ? "flex" : "none"}
-              flexDirection="column"
-              p={2}
-              m={2}
-              spacing={3}
+              display={isOpen ? "flex" : "none"}
+              mt={14}
+              p="2"
               rounded="sm"
               shadow="sm"
+              bg="white"
             >
-              <CloseButton
-                aria-label="Close menu"
-                justifySelf="self-start"
-                onClick={mobileNav.onClose}
-              />
-              <Button w="full" variant="ghost" leftIcon={<AiFillHome />}>
-                About
-              </Button>
-              <Button w="full" variant="ghost" leftIcon={<AiOutlineInbox />}>
-                Skills
-              </Button>
-              <Button w="full" variant="ghost" leftIcon={<BsFillCameraVideoFill />}>
-                Projects
-              </Button>
-              <Button w="full" variant="ghost" leftIcon={<BsFillCameraVideoFill />}>
-                Contact
-              </Button>
+              {navItem.map((item) => {
+                return (
+                  <Link fontSize="xl" fontWeight="500" key={item.path}>
+                    {item.name}
+                  </Link>
+                );
+              })}
+
               <Link
                 target="_blank"
                 href="https://drive.google.com/file/d/1VAP9hrHqw_VtIAMtJIYulbPVHb8yqyye/view?usp=sharing"
