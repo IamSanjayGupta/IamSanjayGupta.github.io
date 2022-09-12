@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
-    <Box height={"80vh"} mt="6%" id="about">
+    <Box height={"70vh"} mt="6%" id="about">
       <Flex
         flexDirection={{ base: "column", md: "row" }}
         alignItems="center"
