@@ -43,7 +43,11 @@ export default function App() {
       >
         <Flex justifyContent="space-between" mx="auto">
           <chakra.a href="/" title="Sanjay Kumar Gupta" display="flex" alignItems="center">
-            <Avatar size="sm" name="Sanjay Gupta" src={Logo} />
+            <Avatar
+              size="sm"
+              name="Sanjay Gupta"
+              src="https://img.freepik.com/premium-vector/hexagonal-letter-s-logo-icon_9880-1.jpg"
+            />
           </chakra.a>
           <HStack spacing={3} display={{ base: "none", md: "flex" }} gap="6">
             {navItem.map((item) => {
