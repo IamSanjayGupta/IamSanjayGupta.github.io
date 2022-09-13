@@ -26,7 +26,15 @@ const skillData = [
 const Skills = () => {
   let skills = skillData.map((item) => {
     return (
-      <VStack key={item.name} shadow={"md"} py="6" px="3" width="120px" height={"120px"}>
+      <VStack
+        key={item.name}
+        shadow={"md"}
+        py="6"
+        px="3"
+        width="120px"
+        height={"120px"}
+        justifyContent="flex-end"
+      >
         <Image src={item.icon} size={"xl"} height="80%" />
         <Heading size={"sm"}>{item.name}</Heading>
       </VStack>

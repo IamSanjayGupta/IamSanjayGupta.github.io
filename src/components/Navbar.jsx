@@ -22,6 +22,9 @@ const navItem = [
   { path: "Projects", name: "Projects" },
   { path: "Contact", name: "Contact" },
 ];
+
+const secondryColor = "#2442d7";
+
 export default function App() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -35,7 +38,7 @@ export default function App() {
         pos={"sticky"}
         top="0"
         zIndex={10}
-        bg="white"
+        bg="black"
       >
         <Flex justifyContent="space-between" mx="auto">
           <chakra.a href="/" title="Sanjay Kumar Gupta" display="flex" alignItems="center">
@@ -44,7 +47,7 @@ export default function App() {
           <HStack spacing={3} display={{ base: "none", md: "flex" }}>
             {navItem.map((item) => {
               return (
-                <Button key={item.path} variant="ghost">
+                <Button key={item.path} variant="ghost" color="white">
                   {item.name}
                 </Button>
               );
@@ -57,15 +60,16 @@ export default function App() {
             download="Sanjay-Gupta-Resume"
             _hover={{ textDecoration: "none" }}
           >
-            <Button variant="ghost" leftIcon={<AiOutlineDownload />}>
-              Downlaod Resume
+            <Button variant="solid" leftIcon={<AiOutlineDownload />} colorScheme="messenger">
+              Download Resume
             </Button>
           </Link>
           <Box display={{ base: "flex", md: "none" }}>
             <IconButton
               display={{ base: "flex", md: "none" }}
               fontSize="20px"
-              color="gray.800"
+              bg="black"
+              color="white"
               variant="ghost"
               icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
               onClick={isOpen ? onClose : onOpen}
@@ -95,8 +99,8 @@ export default function App() {
                 download="Sanjay-Gupta-Resume"
                 _hover={{ textDecoration: "none" }}
               >
-                <Button variant="ghost" leftIcon={<AiOutlineDownload />}>
-                  Downlaod Resume
+                <Button variant="solid" leftIcon={<AiOutlineDownload />} colorScheme="messenger">
+                  Download Resume
                 </Button>
               </Link>
             </VStack>
