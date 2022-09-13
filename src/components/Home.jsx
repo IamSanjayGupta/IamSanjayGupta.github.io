@@ -20,7 +20,7 @@ const Home = () => {
         name="Sanjay Gupta"
         src="https://avatars.githubusercontent.com/u/80489885?v=4"
       />
-      <VStack alignItems={"flex-start"} spacing="5" w={{ base: "90%", md: "60%" }}>
+      <VStack alignItems={"flex-start"} spacing="5" w={{ base: "90%", md: "60%" }} pb="16">
         <Heading>Hi👋,</Heading>
         <Heading>I'm Sanjay Kumar Gupta</Heading>
         <Heading>

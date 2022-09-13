@@ -39,17 +39,18 @@ export default function App() {
         top="0"
         zIndex={10}
         bg="black"
+        color="white"
       >
         <Flex justifyContent="space-between" mx="auto">
           <chakra.a href="/" title="Sanjay Kumar Gupta" display="flex" alignItems="center">
             <Avatar size="sm" name="Sanjay Gupta" src={Logo} />
           </chakra.a>
-          <HStack spacing={3} display={{ base: "none", md: "flex" }}>
+          <HStack spacing={3} display={{ base: "none", md: "flex" }} gap="6">
             {navItem.map((item) => {
               return (
-                <Button key={item.path} variant="ghost" color="white">
+                <Link key={item.path} fontSize="18">
                   {item.name}
-                </Button>
+                </Link>
               );
             })}
           </HStack>
@@ -68,9 +69,7 @@ export default function App() {
             <IconButton
               display={{ base: "flex", md: "none" }}
               fontSize="20px"
-              bg="black"
-              color="white"
-              variant="ghost"
+              colorScheme={"blackAlpha"}
               icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
               onClick={isOpen ? onClose : onOpen}
             />
@@ -78,12 +77,13 @@ export default function App() {
               pos="absolute"
               left={0}
               right={0}
+              top={16}
               display={isOpen ? "flex" : "none"}
-              mt={14}
-              p="2"
+              pb="6"
               rounded="sm"
               shadow="sm"
-              bg="white"
+              bg="black"
+              color="white"
             >
               {navItem.map((item) => {
                 return (
