@@ -1,6 +1,7 @@
 import { Avatar, Box, Flex, Heading, VStack } from "@chakra-ui/react";
 import React from "react";
 import Typewriter from "typewriter-effect";
+import pofilePic from "../assets/profile.png";
 
 const Home = () => {
   return (
@@ -14,16 +15,11 @@ const Home = () => {
       color="white"
       id="about"
     >
-      <Avatar
-        width="300px"
-        height="300px"
-        name="Sanjay Gupta"
-        src="https://avatars.githubusercontent.com/u/80489885?v=4"
-      />
-      <VStack alignItems={"flex-start"} spacing="5" w={{ base: "90%", md: "60%" }} pb="16">
+      <Avatar width="300px" height="300px" name="Sanjay Gupta" src={pofilePic} />
+      <VStack alignItems={"flex-start"} spacing="5" w={{ base: "90%", md: "60%" }}>
         <Heading>Hi👋,</Heading>
         <Heading>I'm Sanjay Kumar Gupta</Heading>
-        <Heading>
+        <Heading pb={6}>
           <Typewriter
             options={{
               strings: ["I'm Full Stack Web Developer.", "Writing clean & simple code."],

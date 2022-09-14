@@ -34,6 +34,12 @@ const Skills = () => {
         width="120px"
         height={"120px"}
         justifyContent="flex-end"
+        boxShadow="0px 5px 10px 0px rgba(0, 0, 0, 0.5)"
+        rounded={"lg"}
+        _hover={{
+          transform: "translateY(-2px)",
+          boxShadow: "0px 10px 20px 2px rgba(0, 0, 0, 0.25)",
+        }}
       >
         <Image src={item.icon} size={"xl"} height="80%" />
         <Heading size={"sm"}>{item.name}</Heading>
