@@ -48,7 +48,7 @@ const Skills = () => {
   });
 
   return (
-    <Container maxW={"1000px"} height={"80vh"}>
+    <Container maxW={"1000px"} height={"100vh"}>
       <VStack align={"center"} spacing="5">
         <Heading>My Tools & Skills </Heading>
         <HStack flexWrap={"wrap"} gap="3" maxW={"850px"} justifyContent="center">
