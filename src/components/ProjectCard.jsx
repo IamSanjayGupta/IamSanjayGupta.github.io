@@ -1,15 +1,15 @@
-import { Box, Flex, VStack } from "@chakra-ui/react";
+import { Box, Flex, Heading, VStack } from "@chakra-ui/react";
 import React from "react";
 import CarouselCard from "./CarouselCard";
 
 const ProjectCard = () => {
   return (
-    <Flex border={"1px solid red"} alignItems="center">
+    <Flex alignItems="center" height={"200px"} boxShadow="rgba(0, 0, 0, 0.1) 0px 4px 12px">
       <VStack width={"55%"}>
-        <h1>Indeed</h1>
-        <h2>Chakra</h2>
+        <Heading>Indeed</Heading>
+        <Heading>I am in indeed.</Heading>
       </VStack>
-      <Box width={"40%"}>
+      <Box width={"50%"} mt="40px">
         <CarouselCard />
       </Box>
     </Flex>
