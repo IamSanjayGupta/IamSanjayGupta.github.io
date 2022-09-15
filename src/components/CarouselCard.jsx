@@ -16,15 +16,16 @@ const CarouselCard = () => {
       infiniteLoop={true}
       showIndicators={false}
       showStatus={false}
+      rounded={"lg"}
     >
       <Box>
-        <Image width={"150px"} height={"170px"} src={indeed1} />
+        <Image width={{ base: "100%", md: "150px" }} height={"250px"} src={indeed1} />
       </Box>
       <Box>
-        <Image width={"150px"} height={"170px"} src={indeed2} />
+        <Image width={{ base: "100%", md: "150px" }} height={"250px"} src={indeed2} />
       </Box>
       <Box>
-        <Image width={"150px"} height={"170px"} src={indeed3} />
+        <Image width={{ base: "100%", md: "150px" }} height={"250px"} src={indeed3} />
       </Box>
     </Carousel>
   );

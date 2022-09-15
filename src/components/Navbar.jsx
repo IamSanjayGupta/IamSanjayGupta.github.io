@@ -116,7 +116,7 @@ export default function App() {
                     to={item.path}
                     spy={true}
                     smooth={true}
-                    offset={item.path == "skills" ? -180 : -50}
+                    offset={item.path == "skills" ? -180 : -30}
                     duration={700}
                     onClick={isOpen ? onClose : onOpen}
                   >

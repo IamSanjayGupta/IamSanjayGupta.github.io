@@ -57,11 +57,11 @@ const Skills = () => {
     <VStack
       maxW={"1000px"}
       m="auto"
-      height={["100vh", "90vh"]}
+      height={["100vh", "100vh"]}
       justifyContent={"center"}
       alignItems={"center"}
     >
-      <Heading>My Tools & Skills </Heading>
+      <Heading my={6}>My Tools & Skills </Heading>
       <HStack flexWrap={"wrap"} gap="3" maxW={"850px"} justifyContent="center">
         {skills}
       </HStack>

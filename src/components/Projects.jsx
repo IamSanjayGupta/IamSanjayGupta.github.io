@@ -4,8 +4,8 @@ import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   return (
-    <VStack maxW="800px" m="auto" id="projects">
-      <Heading my="5">Projects</Heading>
+    <VStack maxW="1000px" m="auto" id="projects" p="4" gap={"6"}>
+      <Heading mt={{ base: "16", md: "0" }}>Projects</Heading>
       <ProjectCard />
       <ProjectCard />
       <ProjectCard />
