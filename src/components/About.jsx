@@ -6,12 +6,13 @@ const About = () => {
     // <Container maxW={"900px"} height={"80vh"}>
     <VStack
       spacing="5"
-      maxW={"900px"}
+      maxW={"1000px"}
       m="auto"
-      height={"100vh"}
+      height={"90vh"}
       justifyContent="center"
       alignItems="center"
       px="8"
+      id="about"
     >
       <Heading>About me</Heading>
       <Text fontSize={"20px"}>

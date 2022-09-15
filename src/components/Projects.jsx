@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   return (
-    <VStack maxW="800px" m="auto" height={"90vh"}>
+    <VStack maxW="800px" m="auto" id="projects">
       <Heading my="5">Projects</Heading>
       <ProjectCard />
       <ProjectCard />

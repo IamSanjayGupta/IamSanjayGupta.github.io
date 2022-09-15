@@ -14,13 +14,13 @@ const Home = () => {
       bgGradient="radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);"
       // bg="black"
       color="white"
-      id="about"
+      id="home"
     >
       <Avatar width="300px" height="300px" name="Sanjay Gupta" src={pofilePic} />
       <VStack alignItems={"flex-start"} spacing="5" w={{ base: "90%", md: "60%" }}>
         <Heading>Hi👋,</Heading>
         <Heading>I'm Sanjay Kumar Gupta</Heading>
-        <Heading pb={6}>
+        <Heading pb={6} fontSize="2xl">
           <Typewriter
             options={{
               strings: ["I'm Full Stack Web Developer.", "Writing clean & simple code."],

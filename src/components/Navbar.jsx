@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../index.css";
 import {
   chakra,
   Box,
@@ -12,15 +12,17 @@ import {
   Avatar,
   Link,
 } from "@chakra-ui/react";
-import Logo from "../../src/logo.svg";
+
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { AiOutlineDownload } from "react-icons/ai";
+import { Link as ReachLink } from "react-scroll";
 
 const navItem = [
-  { path: "#about", name: "About" },
-  { path: "Skills", name: "Skills" },
-  { path: "Projects", name: "Projects" },
-  { path: "Contact", name: "Contact" },
+  { path: "home", name: "Home" },
+  { path: "about", name: "About" },
+  { path: "skills", name: "Skills" },
+  { path: "projects", name: "Projects" },
+  { path: "contact", name: "Contact" },
 ];
 
 const secondryColor = "#2442d7";
@@ -51,9 +53,21 @@ export default function App() {
             />
           </chakra.a>
           <HStack spacing={3} display={{ base: "none", md: "flex" }} gap="6">
-            {navItem.map((item) => {
+            {navItem.map((item, i) => {
               return (
-                <Link key={item.path} fontSize="18">
+                <Link
+                  as={ReachLink}
+                  key={item.path}
+                  activeClass={"active"}
+                  to={item.path}
+                  spy={true}
+                  smooth={true}
+                  offset={item.path == "skills" ? -180 : -50}
+                  duration={700}
+                  fontSize="18"
+                  _active={{ color: "#0078ff" }}
+                  _hover={{ color: "blue", color: "#0078ff" }}
+                >
                   {item.name}
                 </Link>
               );
@@ -87,12 +101,25 @@ export default function App() {
               pb="6"
               rounded="sm"
               shadow="sm"
-              bg="black"
+              bgGradient="radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);"
+              // bg="black"
               color="white"
             >
               {navItem.map((item) => {
                 return (
-                  <Link fontSize="xl" fontWeight="500" key={item.path}>
+                  <Link
+                    fontSize="xl"
+                    fontWeight="500"
+                    key={item.path}
+                    as={ReachLink}
+                    activeClass={"active"}
+                    to={item.path}
+                    spy={true}
+                    smooth={true}
+                    offset={item.path == "skills" ? -180 : -50}
+                    duration={700}
+                    onClick={isOpen ? onClose : onOpen}
+                  >
                     {item.name}
                   </Link>
                 );
