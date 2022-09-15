@@ -12,8 +12,9 @@ const ProjectCard = () => {
       rounded={"lg"}
       flexDirection={{ base: "column-reverse", md: "row" }}
       bg="#7a94b4"
+      p="2"
     >
-      <VStack width={{ base: "100%", md: "50%" }} p="2" mt="-20px">
+      <VStack width={{ base: "100%", md: "50%" }} mt="-20px">
         <Heading>Indeed - Clone</Heading>
         <Text>
           Indeed is an employment website for job listings. This clone has job search, filteration,

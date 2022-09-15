@@ -45,6 +45,8 @@ const Skills = () => {
           transform: "translateY(-2px)",
           boxShadow: "0px 10px 20px 2px rgba(0, 0, 0, 0.25)",
         }}
+        bg="white"
+        color="black"
         id="skills"
       >
         <Image src={item.icon} size={"xl"} height="80%" />
@@ -55,11 +57,11 @@ const Skills = () => {
 
   return (
     <VStack
-      maxW={"1000px"}
-      m="auto"
-      height={["100vh", "100vh"]}
-      justifyContent={"center"}
+      p="8"
+      height={{ base: "100%", md: "90vh" }}
       alignItems={"center"}
+      bgGradient="radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);"
+      color="white"
     >
       <Heading my={6}>My Tools & Skills </Heading>
       <HStack flexWrap={"wrap"} gap="3" maxW={"850px"} justifyContent="center">

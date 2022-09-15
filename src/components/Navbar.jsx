@@ -62,7 +62,7 @@ export default function App() {
                   to={item.path}
                   spy={true}
                   smooth={true}
-                  offset={item.path == "skills" ? -180 : -50}
+                  offset={item.path == "skills" ? -180 : -60}
                   duration={700}
                   fontSize="18"
                   _active={{ color: "#0078ff" }}
@@ -116,7 +116,7 @@ export default function App() {
                     to={item.path}
                     spy={true}
                     smooth={true}
-                    offset={item.path == "skills" ? -180 : -30}
+                    offset={item.path == "skills" ? -180 : -60}
                     duration={700}
                     onClick={isOpen ? onClose : onOpen}
                   >
