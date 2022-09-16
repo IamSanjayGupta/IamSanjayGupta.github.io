@@ -50,6 +50,7 @@ export default function App() {
               size="sm"
               name="Sanjay Gupta"
               src="https://img.freepik.com/premium-vector/hexagonal-letter-s-logo-icon_9880-1.jpg"
+              _hover={{ transform: "rotate(90deg)" }}
             />
           </chakra.a>
           <HStack spacing={3} display={{ base: "none", md: "flex" }} gap="6">
