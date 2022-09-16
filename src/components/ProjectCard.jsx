@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, HStack, IconButton, Text, VStack } from "@chakra-ui/react";
+import { Box, Flex, Heading, HStack, IconButton, Link, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 import { GrGithub, GrView } from "react-icons/gr";
 import CarouselCard from "./CarouselCard";
@@ -21,11 +21,13 @@ const ProjectCard = (project) => {
           Tech Stack: <span>{project.techStack.join(", ")}</span>
         </Heading>
         <HStack gap="4">
-          <IconButton aria-label="Go to website" icon={<GrView />} href={"google.com"} />
+          <Link src="google.com">
+            <IconButton aria-label="Go to website" icon={<GrView />} />
+          </Link>
           <IconButton aria-label="Show Code" icon={<GrGithub />} />
         </HStack>
       </VStack>
-      <Box width={{ base: "100%", md: "50%" }} mt={{ base: "0", md: "40px" }}>
+      <Box width={{ base: "100%", md: "50%" }}>
         <CarouselCard images={project.images} />
       </Box>
     </Flex>

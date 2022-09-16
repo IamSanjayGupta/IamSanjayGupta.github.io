@@ -1,15 +1,15 @@
-import ReactLogo from "../assets/react.svg";
-import JSLogo from "../assets/javascript.png";
-import HTMLLogo from "../assets/html.png";
-import mongodb from "../assets/mongodb.png";
-import nodejsLogo from "../assets/nodejs.png";
-import expressLogo from "../assets/expressjs.png";
-import reduxLogo from "../assets/redux.png";
-import gitLogo from "../assets/git.png";
-import CSSLogo from "../assets/css.png";
-import DSALogo from "../assets/dsa.png";
-import npmLogo from "../assets/npm.svg";
-import ChakraLogo from "../assets/chakra.svg";
+import ReactLogo from "../assets/icons/react.svg";
+import JSLogo from "../assets/icons/javascript.png";
+import HTMLLogo from "../assets/icons/html.png";
+import mongodb from "../assets/icons/mongodb.png";
+import nodejsLogo from "../assets/icons/nodejs.png";
+import expressLogo from "../assets/icons/expressjs.png";
+import reduxLogo from "../assets/icons/redux.png";
+import gitLogo from "../assets/icons/git.png";
+import CSSLogo from "../assets/icons/css.png";
+import DSALogo from "../assets/icons/dsa.png";
+import npmLogo from "../assets/icons/npm.svg";
+import ChakraLogo from "../assets/icons/chakra.svg";
 
 export const skillData = [
   { name: "React", icon: ReactLogo },

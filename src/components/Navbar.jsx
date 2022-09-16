@@ -25,7 +25,7 @@ const navItem = [
   { path: "contact", name: "Contact" },
 ];
 
-const secondryColor = "#2442d7";
+// const secondryColor = "#2442d7";
 
 export default function App() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -63,11 +63,10 @@ export default function App() {
                   to={item.path}
                   spy={true}
                   smooth={true}
-                  offset={item.path == "skills" ? -180 : -60}
+                  offset={item.path === "skills" ? -180 : -60}
                   duration={700}
                   fontSize="18"
-                  _active={{ color: "#0078ff" }}
-                  _hover={{ color: "blue", color: "#0078ff" }}
+                  _hover={{ color: "#0078ff" }}
                 >
                   {item.name}
                 </Link>
@@ -117,7 +116,7 @@ export default function App() {
                     to={item.path}
                     spy={true}
                     smooth={true}
-                    offset={item.path == "skills" ? -180 : -60}
+                    offset={item.path === "skills" ? -180 : -60}
                     duration={700}
                     onClick={isOpen ? onClose : onOpen}
                   >
