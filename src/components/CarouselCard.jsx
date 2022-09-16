@@ -3,12 +3,9 @@ import React from "react";
 import gitLogo from "../assets/git.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import indeed1 from "../assets/indeed/1.png";
-import indeed2 from "../assets/indeed/2.png";
-import indeed3 from "../assets/indeed/3.png";
-import indeed4 from "../assets/indeed/4.png";
 
-const CarouselCard = () => {
+const CarouselCard = ({ images }) => {
+  console.log(images);
   return (
     <Carousel
       interval={1500}
@@ -18,15 +15,13 @@ const CarouselCard = () => {
       showStatus={false}
       rounded={"lg"}
     >
-      <Box>
-        <Image width={{ base: "100%", md: "150px" }} height={"250px"} src={indeed1} />
-      </Box>
-      <Box>
-        <Image width={{ base: "100%", md: "150px" }} height={"250px"} src={indeed2} />
-      </Box>
-      <Box>
-        <Image width={{ base: "100%", md: "150px" }} height={"250px"} src={indeed3} />
-      </Box>
+      {images.map((img) => {
+        return (
+          <Box>
+            <Image width={{ base: "100%", md: "150px" }} height={"280px"} src={img} />
+          </Box>
+        );
+      })}
     </Carousel>
   );
 };

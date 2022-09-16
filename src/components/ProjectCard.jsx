@@ -3,34 +3,30 @@ import React from "react";
 import { GrGithub, GrView } from "react-icons/gr";
 import CarouselCard from "./CarouselCard";
 
-const ProjectCard = () => {
+const ProjectCard = (project) => {
   return (
     <Flex
       alignItems="center"
-      height={{ base: "100%", md: "250px" }}
+      height={{ base: "100%", md: "300px" }}
       boxShadow="rgba(0, 0, 0, 0.1) 0px 4px 12px"
       rounded={"lg"}
       flexDirection={{ base: "column-reverse", md: "row" }}
       bg="#7a94b4"
       p="2"
     >
-      <VStack width={{ base: "100%", md: "50%" }} mt="-20px">
-        <Heading>Indeed - Clone</Heading>
-        <Text>
-          Indeed is an employment website for job listings. This clone has job search, filteration,
-          pagination, view job, apply job and many more features. Login and signup required email
-          verification. The password store in the database is AES encrypted.
-        </Text>
+      <VStack width={{ base: "100%", md: "50%" }} gap={"2"}>
+        <Heading>{project.title}</Heading>
+        <Text>{project.description}</Text>
         <Heading size="sm">
-          Tech Stack: <span>ReactJS, Chakra-UI</span>
+          Tech Stack: <span>{project.techStack.join(", ")}</span>
         </Heading>
         <HStack gap="4">
-          <IconButton aria-label="Go to website" icon={<GrView />} />
+          <IconButton aria-label="Go to website" icon={<GrView />} href={"google.com"} />
           <IconButton aria-label="Show Code" icon={<GrGithub />} />
         </HStack>
       </VStack>
       <Box width={{ base: "100%", md: "50%" }} mt={{ base: "0", md: "40px" }}>
-        <CarouselCard />
+        <CarouselCard images={project.images} />
       </Box>
     </Flex>
   );
