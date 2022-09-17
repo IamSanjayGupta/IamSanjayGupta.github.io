@@ -2,7 +2,11 @@ import { Flex } from "@chakra-ui/react";
 import React from "react";
 
 const Footer = () => {
-  return <Flex justify={"center"}>Design and Develope by Sanjay Gupta @2022 copyright</Flex>;
+  return (
+    <Flex justify={"center"}>
+      Designed and Developed by Sanjay Gupta &#169; 2022 All rights reserved.
+    </Flex>
+  );
 };
 
 export default Footer;

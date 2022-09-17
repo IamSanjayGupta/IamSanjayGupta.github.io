@@ -33,8 +33,8 @@ export const projectsData = [
     description:
       "Myntra is one of the populer online fashion store. We have cloned Login/Signup, Homepage, Navbar, apply filter and sorting, view product, cart and fake payment features.",
     techStack: ["HTML", "CSS", "JavaScript"],
-    githubURL: "https://github.com/IamSanjayGupta/cheerful-apparatus-8895",
-    deployedURL: "https://github.com/Shibshankar01/Myntra",
+    githubURL: "https://github.com/Shibshankar01/Myntra",
+    deployedURL: "https://grand-tarsier-842e30.netlify.app",
     images: [myntra1, myntra2, myntra3, myntra4, myntra5],
   },
   {

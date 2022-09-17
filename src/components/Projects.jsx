@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Heading, VStack } from "@chakra-ui/react";
+import { Heading, VStack } from "@chakra-ui/react";
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import { projectsData } from "../utils/projectsData";

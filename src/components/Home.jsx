@@ -1,4 +1,4 @@
-import { Avatar, Box, Flex, Heading, VStack } from "@chakra-ui/react";
+import { Avatar, Flex, Heading, VStack } from "@chakra-ui/react";
 import React from "react";
 import Typewriter from "typewriter-effect";
 import pofilePic from "../assets/profile.png";

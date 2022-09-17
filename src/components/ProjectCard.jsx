@@ -21,10 +21,12 @@ const ProjectCard = (project) => {
           Tech Stack: <span>{project.techStack.join(", ")}</span>
         </Heading>
         <HStack gap="4">
-          <Link src="google.com">
+          <Link href={project.deployedURL} target={"_blank"}>
             <IconButton aria-label="Go to website" icon={<GrView />} />
           </Link>
-          <IconButton aria-label="Show Code" icon={<GrGithub />} />
+          <Link href={project.githubURL} target={"_blank"}>
+            <IconButton aria-label="Show Code" icon={<GrGithub />} />
+          </Link>
         </HStack>
       </VStack>
       <Box width={{ base: "100%", md: "50%" }}>
