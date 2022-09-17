@@ -3,6 +3,19 @@ import indeed2 from "../assets/indeed/2.png";
 import indeed3 from "../assets/indeed/3.png";
 import indeed4 from "../assets/indeed/4.png";
 
+import ME1 from "../assets/managengine/1.png"
+import ME2 from "../assets/managengine/2.png"
+import ME3 from "../assets/managengine/3.png"
+import ME4 from "../assets/managengine/4.png"
+import ME5 from "../assets/managengine/5.png"
+
+
+import myntra1 from "../assets/myntra/1.png"
+import myntra2 from "../assets/myntra/2.png"
+import myntra3 from "../assets/myntra/3.png"
+import myntra4 from "../assets/myntra/4.png"
+import myntra5 from "../assets/myntra/5.png"
+
 export const projectsData = [
   {
     id: 1,
@@ -22,7 +35,7 @@ export const projectsData = [
     techStack: ["HTML", "CSS", "JavaScript"],
     githubURL: "https://github.com/IamSanjayGupta/cheerful-apparatus-8895",
     deployedURL: "https://github.com/Shibshankar01/Myntra",
-    images: [indeed1, indeed2, indeed3, indeed4],
+    images: [myntra1, myntra2, myntra3, myntra4, myntra5],
   },
   {
     id: 3,
@@ -32,6 +45,6 @@ export const projectsData = [
     techStack: ["HTML", "CSS", "JavaScript"],
     githubURL: "https://github.com/IamSanjayGupta/cheerful-apparatus-8895",
     deployedURL: "https://iamsanjaygupta.github.io/cheerful-apparatus-8895",
-    images: [indeed1, indeed2, indeed3, indeed4],
+    images: [ME1, ME2, ME3, ME4, ME5],
   },
 ];
