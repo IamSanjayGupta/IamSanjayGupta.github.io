@@ -16,6 +16,7 @@ import {
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Link as ReachLink } from "react-scroll";
+import resume from "../assets/Sanjay-Gupta-Resume.pdf";
 
 const navItem = [
   { path: "home", name: "Home" },
@@ -76,7 +77,7 @@ export default function App() {
           <Link
             display={{ base: "none", md: "flex" }}
             target="_blank"
-            href="https://drive.google.com/file/d/1VAP9hrHqw_VtIAMtJIYulbPVHb8yqyye/view?usp=sharing"
+            href={resume}
             download="Sanjay-Gupta-Resume"
             _hover={{ textDecoration: "none" }}
           >
@@ -127,7 +128,7 @@ export default function App() {
 
               <Link
                 target="_blank"
-                href="https://drive.google.com/file/d/1VAP9hrHqw_VtIAMtJIYulbPVHb8yqyye/view?usp=sharing"
+                href={resume}
                 download="Sanjay-Gupta-Resume"
                 _hover={{ textDecoration: "none" }}
               >
