@@ -16,8 +16,8 @@ const CarouselCard = ({ images }) => {
     >
       {images.map((img) => {
         return (
-          <Box>
-            <Image key={img} width={{ base: "100%", md: "150px" }} height={"280px"} src={img} />
+          <Box key={img}>
+            <Image width={{ base: "100%", md: "150px" }} height={"280px"} src={img} />
           </Box>
         );
       })}

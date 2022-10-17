@@ -3,7 +3,6 @@ import React from "react";
 
 const About = () => {
   return (
-    // <Container maxW={"900px"} height={"80vh"}>
     <VStack
       spacing="5"
       maxW={"1000px"}
@@ -28,7 +27,6 @@ const About = () => {
         </Text>
       </Flex>
     </VStack>
-    // </Container>
   );
 };
 

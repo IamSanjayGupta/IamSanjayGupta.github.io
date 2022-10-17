@@ -1,5 +1,6 @@
 import { Box, Flex, Heading, HStack, IconButton, Link, Text, VStack } from "@chakra-ui/react";
 import React from "react";
+
 import { GrGithub, GrView } from "react-icons/gr";
 import CarouselCard from "./CarouselCard";
 
