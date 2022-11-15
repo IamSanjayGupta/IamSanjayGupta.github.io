@@ -1,6 +1,7 @@
 import { Heading, Image, VStack } from "@chakra-ui/react";
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
+import ReactTooltip from "react-tooltip";
 
 const Statistics = () => {
   return (
@@ -11,7 +12,9 @@ const Statistics = () => {
           "https://raw.githubusercontent.com/IamSanjayGupta/IamSanjayGupta/main/profile-3d-contrib/profile-night-rainbow.svg"
         }
       />
-      <GitHubCalendar username="IamSanjayGupta" />
+      <GitHubCalendar username="IamSanjayGupta">
+        <ReactTooltip delayShow={20} html />
+      </GitHubCalendar>
     </VStack>
   );
 };
