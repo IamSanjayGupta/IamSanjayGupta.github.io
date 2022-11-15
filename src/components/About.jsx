@@ -13,7 +13,7 @@ const About = () => {
       p="8"
       id="about"
     >
-      <Heading>About me</Heading>
+      <Heading>About Me</Heading>
       <Flex flexDir={{ base: "column", md: "row" }} justifyContent={"center"} alignItems={"center"}>
         <Image
           w={{ base: "50%", md: "40%" }}
