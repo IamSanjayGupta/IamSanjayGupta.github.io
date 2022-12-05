@@ -23,7 +23,8 @@ import { FaUserTie } from "react-icons/fa";
 const Contact = () => {
   return (
     <VStack maxW={"1000px"} m="auto" id="contact" gap="10">
-      <Heading>Let's get in touch</Heading>
+      <br />
+      <Heading>Let's Get In Touch</Heading>
       <Stack
         direction={{ base: "column", md: "row" }}
         justifyContent="space-evenly"

@@ -21,9 +21,35 @@ import myntra3 from "../assets/myntra/3.png";
 import myntra4 from "../assets/myntra/4.png";
 import myntra5 from "../assets/myntra/5.png";
 
+const exclusive1 =
+  "https://github.com/Hashal890/Exclusive-Yoox-Clone/raw/main/assets/loginPage.png";
+const exclusive2 = "https://github.com/Hashal890/Exclusive-Yoox-Clone/raw/main/assets/homePage.png";
+const exclusive3 =
+  "https://github.com/Hashal890/Exclusive-Yoox-Clone/raw/main/assets/mensProductsPage.png";
+const exclusive4 =
+  "https://github.com/Hashal890/Exclusive-Yoox-Clone/raw/main/assets/singleProductsPage.png";
+const exclusive5 = "https://github.com/Hashal890/Exclusive-Yoox-Clone/raw/main/assets/cartPage.png";
+const exclusive6 =
+  "https://github.com/Hashal890/Exclusive-Yoox-Clone/raw/main/assets/shippingPage.png";
+const exclusive7 =
+  "https://github.com/Hashal890/Exclusive-Yoox-Clone/raw/main/assets/paymentPage.png";
+const exclusive8 =
+  "https://github.com/Hashal890/Exclusive-Yoox-Clone/raw/main/assets/rezorpayPaymentIntegration.png";
+
+let ind = 1;
 export const projectsData = [
   {
-    id: 1,
+    id: ind++,
+    title: "Exclusive (Yoox-Clone)",
+    description:
+      "Exclusive is a fashion e-commerce online store, provides the best Italian and international designer products. This clone has Login, Signup with email & Github, homepage, products and product details page, pagination, cart and razorpay option for checkout.",
+    techStack: ["NextJS", "JavaScript", "Chakra UI", "MongoDB", "JWT", "Redis"],
+    githubURL: "https://github.com/Hashal890/Exclusive-Yoox-Clone",
+    deployedURL: "https://yoox-clone-by-exclusive.vercel.app",
+    images: [exclusive1, exclusive2, exclusive3, exclusive4, exclusive5, exclusive6, exclusive7],
+  },
+  {
+    id: ind++,
     title: "Indeed-Clone",
     description:
       "Indeed is an employment website for job listings. This clone has job search, filteration,  pagination, view job, apply job and many more features. Login and signup required email verification. The password store in the database is AES encrypted.",
@@ -33,7 +59,7 @@ export const projectsData = [
     images: [indeed1, indeed2, indeed3, indeed4],
   },
   {
-    id: 2,
+    id: ind++,
     title: "Tmetric-Clone",
     description:
       "TMetric is time tracking tool for a task or project to optimize the processes and increase the productivity. We cloned login/signup, homepage, blog section, create & edit and delete task and track them, generate logs and many more features.",
@@ -43,7 +69,7 @@ export const projectsData = [
     images: [tmetric1, tmetric2, tmetric3, tmetric4, tmetric5],
   },
   {
-    id: 3,
+    id: ind++,
     title: "Myntra-Clone",
     description:
       "Myntra is one of the populer online fashion store. We have cloned Login/Signup, Homepage, Navbar, apply filter and sorting, view product, cart and fake payment features.",
@@ -53,7 +79,7 @@ export const projectsData = [
     images: [myntra1, myntra2, myntra3, myntra4, myntra5],
   },
   {
-    id: 4,
+    id: ind++,
     title: "ManageEngine-Clone",
     description:
       "ManageEngine offers IT management software for service & operations management, security needs and etc. We have cloned the navbar, footer, homepage, product view section and added store option to buy products. And also implemented the login sigup using api.",
