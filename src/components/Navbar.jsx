@@ -16,7 +16,8 @@ import {
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Link as ReachLink } from "react-scroll";
-import resume from "../assets/Sanjay-Gupta-Resume.pdf";
+const resume =
+  "https://raw.githubusercontent.com/IamSanjayGupta/RESUME/main/Sanjay-Gupta-Resume.pdf";
 
 const navItem = [
   { path: "home", name: "Home" },
