@@ -21,6 +21,13 @@ import myntra3 from "../assets/myntra/3.png";
 import myntra4 from "../assets/myntra/4.png";
 import myntra5 from "../assets/myntra/5.png";
 
+import ss1 from "../assets/supersports/event.png";
+import ss2 from "../assets/supersports/login.png";
+import ss3 from "../assets/supersports/signup.png";
+import ss4 from "../assets/supersports/newevent.png";
+import ss5 from "../assets/supersports/approval.png";
+import ss6 from "../assets/supersports/bookings.png";
+
 const exclusive1 =
   "https://github.com/Hashal890/Exclusive-Yoox-Clone/raw/main/assets/loginPage.png";
 const exclusive2 = "https://github.com/Hashal890/Exclusive-Yoox-Clone/raw/main/assets/homePage.png";
@@ -33,8 +40,8 @@ const exclusive6 =
   "https://github.com/Hashal890/Exclusive-Yoox-Clone/raw/main/assets/shippingPage.png";
 const exclusive7 =
   "https://github.com/Hashal890/Exclusive-Yoox-Clone/raw/main/assets/paymentPage.png";
-const exclusive8 =
-  "https://github.com/Hashal890/Exclusive-Yoox-Clone/raw/main/assets/rezorpayPaymentIntegration.png";
+// const exclusive8 =
+//   "https://github.com/Hashal890/Exclusive-Yoox-Clone/raw/main/assets/rezorpayPaymentIntegration.png";
 
 let ind = 1;
 export const projectsData = [
@@ -47,6 +54,26 @@ export const projectsData = [
     githubURL: "https://github.com/Hashal890/Exclusive-Yoox-Clone",
     deployedURL: "https://yoox-clone-by-exclusive.vercel.app",
     images: [exclusive1, exclusive2, exclusive3, exclusive4, exclusive5, exclusive6, exclusive7],
+  },
+  {
+    id: ind++,
+    title: "Super Sports",
+    description:
+      "Super Sports is event management application. It's a tool specifically designed to help individuals or organizations plan and execute sports events, such as tournaments, leagues, and other competitions.",
+    techStack: [
+      "React",
+      "JavaScript",
+      "Chakra UI",
+      "NodeJS",
+      "Express",
+      "MongoDB",
+      "mongoose",
+      "JWT",
+      "Redis",
+    ],
+    githubURL: "https://github.com/IamSanjayGupta/super-sports",
+    deployedURL: "https://super-sports.vercel.app/",
+    images: [ss1, ss2, ss3, ss4, ss5, ss6],
   },
   {
     id: ind++,
