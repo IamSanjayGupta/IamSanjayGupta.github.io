@@ -19,6 +19,9 @@ import { Link as ReachLink } from "react-scroll";
 const resume =
   "https://raw.githubusercontent.com/IamSanjayGupta/RESUME/main/Sanjay-Gupta-Resume.pdf";
 
+const GoogleResumeLink =
+  "https://drive.google.com/file/d/11Gjs7gTQ71Mg1nhizmcN86_Htj50MfCc/view?usp=sharing";
+
 const navItem = [
   { path: "home", name: "Home" },
   { path: "about", name: "About" },
@@ -31,7 +34,9 @@ const navItem = [
 
 export default function App() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-
+  const handleOpenResumeTab = () => {
+    window.open(GoogleResumeLink, "_blank");
+  };
   return (
     <>
       <chakra.header
@@ -77,12 +82,17 @@ export default function App() {
           </HStack>
           <Link
             display={{ base: "none", md: "flex" }}
-            target="_blank"
+            // target="_blank"
             href={resume}
             download="Sanjay-Gupta-Resume"
             _hover={{ textDecoration: "none" }}
           >
-            <Button variant="solid" leftIcon={<AiOutlineDownload />} colorScheme="messenger">
+            <Button
+              variant="solid"
+              leftIcon={<AiOutlineDownload />}
+              colorScheme="messenger"
+              onClick={handleOpenResumeTab}
+            >
               Download Resume
             </Button>
           </Link>
@@ -133,7 +143,12 @@ export default function App() {
                 download="Sanjay-Gupta-Resume"
                 _hover={{ textDecoration: "none" }}
               >
-                <Button variant="solid" leftIcon={<AiOutlineDownload />} colorScheme="messenger">
+                <Button
+                  variant="solid"
+                  leftIcon={<AiOutlineDownload />}
+                  colorScheme="messenger"
+                  onClick={handleOpenResumeTab}
+                >
                   Download Resume
                 </Button>
               </Link>
