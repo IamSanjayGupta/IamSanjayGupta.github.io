@@ -1,30 +1,40 @@
 {
   "files": {
     "main.css": "/static/css/main.60ee13d4.css",
-    "main.js": "/static/js/main.a85c5946.js",
-    "static/js/787.c0161479.chunk.js": "/static/js/787.c0161479.chunk.js",
+    "main.js": "/static/js/main.15b94b5b.js",
     "static/media/1.png": "/static/media/1.402741542df30e3b2036.png",
     "static/media/3.png": "/static/media/3.3b38fe45ad0cd549f4f5.png",
+    "static/media/event.png": "/static/media/event.1d9ff39af0500c1c002f.png",
+    "static/media/about_me_image.png": "/static/media/about_me_image.933e15ea06520c22a3e1.png",
     "static/media/2.png": "/static/media/2.21c04e62fd273c453d39.png",
+    "static/media/approval.png": "/static/media/approval.35d679a31dc26b23d056.png",
     "static/media/profile.png": "/static/media/profile.71096e99393b033e8764.png",
     "static/media/5.png": "/static/media/5.bbbd8bdd5e9420081972.png",
+    "static/media/tailwind_css.png": "/static/media/tailwind_css.d5abcf62e57cbbee357e.png",
     "static/media/redux.png": "/static/media/redux.1b4bb5fceb01b19da59d.png",
+    "static/media/bookings.png": "/static/media/bookings.f86ea43f6acfd7d57674.png",
     "static/media/4.png": "/static/media/4.4f1d02d79e3421562911.png",
     "static/media/expressjs.png": "/static/media/expressjs.6a3e055a6226b08114ef.png",
+    "static/media/newevent.png": "/static/media/newevent.606f74376fdff8395b39.png",
     "static/media/nodejs.png": "/static/media/nodejs.c2e22c634a7336cbe298.png",
+    "static/media/login.png": "/static/media/login.1e1c4e3e1c6c9b89b6d6.png",
+    "static/media/signup.png": "/static/media/signup.64df212850a6fa7f8c64.png",
+    "static/media/postgresql.png": "/static/media/postgresql.4d0203e08c4a01d04059.png",
     "static/media/html.png": "/static/media/html.323dab0ccafeb98fae45.png",
     "static/media/dsa.png": "/static/media/dsa.40fd3077b249f7a18f40.png",
-    "static/media/mongodb.png": "/static/media/mongodb.057de5cdb374be094c42.png",
+    "static/media/svelte.png": "/static/media/svelte.423c0e098a57d88f1df1.png",
+    "static/media/nestjs.png": "/static/media/nestjs.9cfa484aa7810965da94.png",
+    "static/media/material_ui.png": "/static/media/material_ui.df964212bc9bfd102063.png",
+    "static/media/mongodb.png": "/static/media/mongodb.96203acdb95125517779.png",
     "static/media/npm.svg": "/static/media/npm.a688a2e91d237dedb1b0f67062dc2d7d.svg",
     "static/media/react.svg": "/static/media/react.903d77ad940b12efaddde2484397ad4a.svg",
     "static/media/chakra.svg": "/static/media/chakra.60bf3d994176a05d3087a66241a46cfe.svg",
     "index.html": "/index.html",
     "main.60ee13d4.css.map": "/static/css/main.60ee13d4.css.map",
-    "main.a85c5946.js.map": "/static/js/main.a85c5946.js.map",
-    "787.c0161479.chunk.js.map": "/static/js/787.c0161479.chunk.js.map"
+    "main.15b94b5b.js.map": "/static/js/main.15b94b5b.js.map"
   },
   "entrypoints": [
     "static/css/main.60ee13d4.css",
-    "static/js/main.a85c5946.js"
+    "static/js/main.15b94b5b.js"
   ]
 }
