@@ -1,4 +1,4 @@
-import { Heading, HStack, Image, VStack } from "@chakra-ui/react";
+import { Heading, HStack, Image, VStack, Spinner } from "@chakra-ui/react";
 import React from "react";
 
 import { skillData } from "../utils/skillsData";
@@ -24,7 +24,7 @@ const Skills = () => {
         color="black"
         id="skills"
       >
-        <Image src={item.icon} size={"xl"} height="80%" />
+        <Image src={item.icon} size={"xl"} height="80%" fallback={<Spinner />} />
         <Heading size={"sm"}>{item.name}</Heading>
       </VStack>
     );
