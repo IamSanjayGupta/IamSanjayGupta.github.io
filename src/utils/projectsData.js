@@ -82,7 +82,7 @@ export const projectsData = [
       "Indeed is an employment website for job listings. This clone has job search, filteration,  pagination, view job, apply job and many more features. Login and signup required email verification. The password store in the database is AES encrypted.",
     techStack: ["ReactJS", "JavaScript", "Chakra UI", "JSON Server"],
     githubURL: "https://github.com/IamSanjayGupta/hurried-hospital-4011",
-    deployedURL: "https://indeed-eight.vercel.app",
+    deployedURL: "https://indeed-san.vercel.app/",
     images: [indeed1, indeed2, indeed3, indeed4],
   },
   {

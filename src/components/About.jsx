@@ -23,12 +23,12 @@ const About = () => {
         gap={"8px"}
       >
         <Image w={{ base: "50%", md: "40%" }} src={AboutMe} fallBack={<Spinner />} />
-        <Text fontSize={"20px"}>
+        <Text fontSize={"20px"} align={"justify"}>
           Enthusiastic web developer with ability to learn and collaborate in rapidly changing
           environments. With a year plus experience as Full Stack Developer and worked through 1000+
           hours of bootcamp structure.
           <br />
-          I have hands-one experience on building & deploying web application and developing
+          I have hands-one experience in building & deploying web application and developing
           solution using range of technologies.
           <br />
           Let's connect and explore how I can contribute to your team's success with my passion for
