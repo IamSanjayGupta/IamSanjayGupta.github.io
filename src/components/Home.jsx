@@ -22,7 +22,7 @@ const Home = () => {
         <Heading pb={6} fontSize="2xl">
           <Typewriter
             options={{
-              strings: ["I'm Full Stack Web Developer.", "Writing clean & simple code."],
+              strings: ["A Full Stack Web Developer.", "Writing clean & simple code."],
               autoStart: true,
               loop: true,
               delay: 80,

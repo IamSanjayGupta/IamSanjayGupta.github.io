@@ -6,7 +6,7 @@ import { Carousel } from "react-responsive-carousel";
 const CarouselCard = ({ images }) => {
   return (
     <Carousel
-      interval={1500}
+      interval={2000}
       autoPlay={true}
       infiniteLoop={true}
       showIndicators={false}
