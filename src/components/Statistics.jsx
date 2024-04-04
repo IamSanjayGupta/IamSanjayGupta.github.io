@@ -19,7 +19,7 @@ const Statistics = () => {
         <ReactTooltip delayShow={20} html />
       </GitHubCalendar>
 
-      <LeetcodeStats />
+      {/* <LeetcodeStats /> */}
     </VStack>
   );
 };
